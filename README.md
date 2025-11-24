@@ -14,7 +14,7 @@ Um aplicativo Flutter robusto desenvolvido para demonstração de consumo de API
 ![Detalhes](screenshots/deta.png)
 ![Zero Favoritos](screenshots/zfavo.png)
 ![Favoritos](/screenshots/favo.png)
-![Teste](/screenshots/teste.png)
+![Teste](/screenshots/teste.jpg)
 
 
 ---
