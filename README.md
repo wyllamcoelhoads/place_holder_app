@@ -1,16 +1,42 @@
-# place_holder
+# 📱 Place Holder App
 
-A new Flutter project.
+Um aplicativo Flutter robusto desenvolvido para demonstração de consumo de API REST, gerenciamento de estado e arquitetura limpa. O projeto consome dados da [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) para exibir, filtrar e detalhar postagens.
 
-## Getting Started
+![Badge License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Badge Flutter](https://img.shields.io/badge/Flutter-3.0%2B-02569B.svg)
+![Badge Provider](https://img.shields.io/badge/State_Management-Provider-orange.svg)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 Screenshots
+<p align="center">
+  <img src="screenshots/Home.png" width="250" alt="Home" />
+  <img src="screenshots/Detalhes.png" width="250" alt="Details" />
+  <img src="screenshots/ZeroFavoritos.png" width="250" alt="Details" />
+  <img src="screenshots/Favoritos.png" width="250" alt="Details" />
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ✨ Funcionalidades
+
+- **Consumo de API REST:** Integração completa com métodos HTTP (GET).
+- **Gerenciamento de Estado (Provider):** Separação total entre lógica de negócio e interface (UI).
+- **Tratamento de Erros Robusto:**
+  - Tratamento visual para falta de conexão (SocketException).
+  - Feedback amigável para Timeouts e Erros de Servidor (404/500).
+  - Botão de "Tentar Novamente" (Retry Policy).
+- **Favoritos Locais:** Capacidade de marcar/desmarcar posts como favoritos (Runtime State).
+- **Filtro de Quantidade:** Controle dinâmico do limite de itens buscados na API.
+- **UI/UX Sofisticada:**
+  - Tema escuro (Dark Mode) com paleta de cores premium.
+  - Animações **Hero** na transição entre lista e detalhes.
+  - Layout responsivo com tratamento de *overflow*.
+
+---
+
+## 🏗️ Arquitetura e Padrões
+
+O projeto segue o padrão arquitetural **MVVM (Model-View-ViewModel)** adaptado para Flutter com o pacote **Provider**.
+
+### Estrutura de Pastas
