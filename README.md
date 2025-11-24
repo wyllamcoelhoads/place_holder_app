@@ -68,7 +68,7 @@ Pré-requisitos: Tenha o Flutter instalado e configurado na sua máquina.
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/SEU_USUARIO/place_holder.git](https://github.com/wyllamcoelhoads/place_holder_app.git)
+   git clone https://github.com/wyllamcoelhoads/place_holder_app.git
 
 Entre na pasta do projeto:cd place_holder
 Instale as dependências:flutter pub get
