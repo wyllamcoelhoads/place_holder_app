@@ -11,10 +11,10 @@ Um aplicativo Flutter robusto desenvolvido para demonstração de consumo de API
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/home.png" width="200" alt="Home" style="margin: 5px;" />
-  <img src="screenshots/detalhes.png" width="200" alt="Details" style="margin: 5px;" />
-  <img src="screenshots/zeroFavoritos.png" width="200" alt="Empty State" style="margin: 5px;" />
-  <img src="screenshots/favoritos.png" width="200" alt="Favorites" style="margin: 5px;" />
+  <img src="screenshots/home.png" width="200" alt="home" style="margin: 5px;" />
+  <img src="screenshots/detalhes.png" width="200" alt="detalhes" style="margin: 5px;" />
+  <img src="screenshots/zeroFavoritos.png" width="200" alt="zeroFavoritos" style="margin: 5px;" />
+  <img src="screenshots/favoritos.png" width="200" alt="favoritos" style="margin: 5px;" />
 </p>
 
 ---
