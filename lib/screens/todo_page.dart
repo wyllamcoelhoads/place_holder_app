@@ -194,19 +194,22 @@ class _TodoPageState extends State<TodoPage> {
                     const SizedBox(height: 12),
                     Text(
                       post.title,
-                      maxLines: 2,
+                      maxLines: 1,
                       overflow: TextOverflow.ellipsis,
+                      softWrap: true,
                       style: TextStyle(
                         color: _textColor,
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
                       ),
+
                     ),
                     const SizedBox(height: 8),
                     Text(
                       post.body.replaceAll('\n', ' '),
-                      maxLines: 3,
+                      maxLines: 2,
                       overflow: TextOverflow.ellipsis,
+                      softWrap: true,
                       style: TextStyle(
                         color: Colors.grey[500],
                         fontSize: 14,
