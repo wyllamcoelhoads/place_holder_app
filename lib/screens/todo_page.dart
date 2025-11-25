@@ -41,10 +41,10 @@ class _TodoPageState extends State<TodoPage> {
         backgroundColor: _bgColor,
         appBar: AppBar(
           backgroundColor: _cardColor,
-          elevation: 0,
+          elevation: 50,
           centerTitle: true,
           title: Text(
-            'Place Holder Provider',
+            'Place Holder',
             style: TextStyle(color: _textColor, fontWeight: FontWeight.bold),
           ),
           actions: [
