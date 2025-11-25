@@ -151,6 +151,8 @@ class _TodoPageState extends State<TodoPage> {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
+                  // vai ocupar apenas o espaço necessario ao construir o card
+                  mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
@@ -192,29 +194,34 @@ class _TodoPageState extends State<TodoPage> {
                       ],
                     ),
                     const SizedBox(height: 12),
-                    Text(
-                      post.title,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      softWrap: true,
-                      style: TextStyle(
-                        color: _textColor,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                      ),
-
+                    Flexible(
+                      fit: FlexFit.loose,
+                        child: Text(
+                          post.title,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          softWrap: false, // não quebra linha de forma alguma.
+                          style: TextStyle(
+                            color: _textColor,
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
                     ),
                     const SizedBox(height: 8),
-                    Text(
-                      post.body.replaceAll('\n', ' '),
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      softWrap: true,
-                      style: TextStyle(
-                        color: Colors.grey[500],
-                        fontSize: 14,
-                        height: 1.5,
-                      ),
+                    Flexible(
+                      fit: FlexFit.loose,
+                        child: Text(
+                          post.body.replaceAll('\n', ' '),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          softWrap: false,// não quebra linha de forma alguma.
+                          style: TextStyle(
+                            color: Colors.grey[500],
+                            fontSize: 14,
+                            height: 1.5,
+                          ),
+                        ),
                     ),
                   ],
                 ),
