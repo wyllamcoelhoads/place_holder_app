@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart'; // <--- Importante
+import 'package:provider/provider.dart'; // <--- Importante para utilizar o provider
 import '../models/post_item.dart';
 import '../providers/post_provider.dart'; // <--- Conecta com o Provider
 import 'post_details_page.dart';

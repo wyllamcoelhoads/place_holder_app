@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart'; // <--- Importante
-import 'providers/post_provider.dart';   // <--- Seu novo arquivo
+import 'package:provider/provider.dart'; // <--- Importante para usar provider
+import 'providers/post_provider.dart';   // <--- Arquivo que busca na api
 import 'screens/todo_page.dart';
 
 void main() {
   runApp(
-    // Injeção de Dependência: Criamos o Provider aqui no topo
+    // Injeção de Dependência: Cria a instancia, onde a class de logica nasce
     ChangeNotifierProvider(
       create: (context) => PostProvider(),
-      child: const MyApp(),
-    ),
+      child: const MyApp(),// o filho que enxerga tudo de PostProvider
+    ), // nofitica musanças que correram no app
   );
 }
 
